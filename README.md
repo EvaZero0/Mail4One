@@ -1,24 +1,54 @@
+[English](#mail4one) | [Deutsch](#mail4one-1)
+
 # Mail4One
 
-Mail4One ist ein kleines Python-Tool, das dir hilft, dein E-Mail-Postfach aufzuräumen. Es analysiert deine lokalen Thunderbird-Profile, identifiziert Newsletter und Mailinglisten und unterstützt dich dabei, dich von unerwünschten Abonnements abzumelden.
+Mail4One is a tool for analyzing Thunderbird mailboxes, helping you gain an overview of received emails and efficiently manage newsletters.
+
+## Features
+
+*   **Profile Analysis:** Automatically scans local Thunderbird profiles and IMAP folders for emails.
+*   **Statistics:** Generates a list of senders sorted by message count.
+*   **Link Detection:** Extracts "List-Unsubscribe" links from email headers to simplify unsubscribing.
+*   **Security Check:** Validates extracted links by matching the link domain with the sender address to detect potential phishing attempts.
+*   **Browser Integration:** Allows opening verified unsubscribe links directly in your default web browser.
+
+## Disclaimer
+
+Use of this software is entirely at your own risk. No liability is assumed for any damages that may arise directly or indirectly from using this software. This includes, but is not limited to:
+
+*   Data loss or corruption of email profiles.
+*   Accidental deletion of emails or subscriptions.
+*   Security risks arising from opening extracted links.
+
+It is strongly recommended to create backups of your Thunderbird data before use.
+
+## License
+
+This project is published under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+# Mail4One
+
+Mail4One ist ein Tool zur Analyse von Thunderbird-Postfächern, das dabei hilft, einen Überblick über empfangene E-Mails zu gewinnen und Newsletter effizient zu verwalten.
 
 ## Funktionen
 
-*   **Analyse:** Durchsucht automatisch relevante Ordner (Inbox, Newsletter, etc.) in deinen Thunderbird-Profilen (lokal & IMAP).
-*   **Übersicht:** Listet Absender sortiert nach Häufigkeit der E-Mails auf, damit du siehst, wer dein Postfach am meisten füllt.
-*   **Unsubscribe-Finder:** Extrahiert "List-Unsubscribe"-Links aus den E-Mail-Headern.
-*   **Sicherheitscheck:** Prüft vor dem Anzeigen des Abmeldelinks, ob die Domain des Links zur Absenderadresse passt, um Phishing-Risiken zu minimieren.
-*   **Direktzugriff:** Ermöglicht das Öffnen des Abmeldelinks direkt im Standard-Browser über eine grafische Oberfläche.
+*   **Profil-Analyse:** Durchsucht automatisch lokale Thunderbird-Profile und IMAP-Ordner nach E-Mails.
+*   **Statistik:** Erstellt eine Übersicht der Absender, sortiert nach der Anzahl der empfangenen Nachrichten.
+*   **Link-Erkennung:** Extrahiert "List-Unsubscribe"-Links aus E-Mail-Headern, um das Abbestellen von Newslettern zu vereinfachen.
+*   **Sicherheitsprüfung:** Validiert extrahierte Links durch einen Abgleich der Link-Domain mit der Absenderadresse, um potenzielle Phishing-Versuche zu erkennen.
+*   **Browser-Integration:** Ermöglicht das direkte Öffnen von verifizierten Abmeldelinks im Standard-Webbrowser.
 
 ## Haftungsausschluss
 
-Die Nutzung dieses Tools erfolgt auf eigene Gefahr. Der Autor übernimmt keine Haftung für:
+Die Nutzung der Software erfolgt auf eigene Gefahr. Es wird keinerlei Haftung für Schäden übernommen, die direkt oder indirekt durch die Verwendung dieser Software entstehen könnten. Dies umfasst, ist aber nicht beschränkt auf:
 
 *   Datenverlust oder Beschädigung von E-Mail-Profilen.
-*   Versehentlich gelöschte E-Mails oder Abonnements.
-*   Sicherheitsrisiken, die durch das Öffnen von extrahierten Links entstehen könnten, auch wenn das Tool Sicherheitsprüfungen durchführt.
+*   Versehentliches Löschen von E-Mails oder Abonnements.
+*   Sicherheitsrisiken, die durch das Öffnen von extrahierten Links entstehen.
 
-Bitte erstelle vor der Nutzung Backups deiner Thunderbird-Profile.
+Es wird dringend empfohlen, vor der Nutzung Backups der Thunderbird-Daten zu erstellen.
 
 ## Lizenz
 
