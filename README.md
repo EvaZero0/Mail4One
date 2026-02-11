@@ -1,47 +1,25 @@
-# Mail4One - Thunderbird Unsubscribe Tool
+# Mail4One
 
-Mail4One ist ein Python-Tool, das deine lokalen Thunderbird-Profile nach Newslettern und Mailinglisten durchsucht. Es hilft dir, den Überblick über deine E-Mail-Abonnements zu behalten und dich einfach von unerwünschten Verteilern abzumelden.
+Mail4One ist ein kleines Python-Tool, das dir hilft, dein E-Mail-Postfach aufzuräumen. Es analysiert deine lokalen Thunderbird-Profile, identifiziert Newsletter und Mailinglisten und unterstützt dich dabei, dich von unerwünschten Abonnements abzumelden.
 
 ## Funktionen
 
-*   **Automatische Erkennung:** Findet automatisch dein Thunderbird-Profil unter Windows.
-*   **Intelligenter Scan:** Durchsucht relevante Ordner (Inbox, Newsletter, Subscriptions, Mailing Lists) in lokalen und IMAP-Konten.
-*   **Sicherheit:** Extrahiert "List-Unsubscribe"-Links und prüft dabei, ob die Domain des Links zum Absender passt (Phishing-Schutz).
-*   **Benutzeroberfläche:** Übersichtliche GUI (Tkinter), die Absender nach Häufigkeit sortiert anzeigt.
-*   **One-Click-Unsubscribe:** Öffnet den Abmeldelink direkt in deinem Standard-Browser.
+*   **Analyse:** Durchsucht automatisch relevante Ordner (Inbox, Newsletter, etc.) in deinen Thunderbird-Profilen (lokal & IMAP).
+*   **Übersicht:** Listet Absender sortiert nach Häufigkeit der E-Mails auf, damit du siehst, wer dein Postfach am meisten füllt.
+*   **Unsubscribe-Finder:** Extrahiert "List-Unsubscribe"-Links aus den E-Mail-Headern.
+*   **Sicherheitscheck:** Prüft vor dem Anzeigen des Abmeldelinks, ob die Domain des Links zur Absenderadresse passt, um Phishing-Risiken zu minimieren.
+*   **Direktzugriff:** Ermöglicht das Öffnen des Abmeldelinks direkt im Standard-Browser über eine grafische Oberfläche.
 
-## Installation
+## Haftungsausschluss
 
-1.  Klone das Repository:
-    ```bash
-    git clone https://github.com/EvaZero0/Mail4One.git
-    cd Mail4One
-    ```
+Die Nutzung dieses Tools erfolgt auf eigene Gefahr. Der Autor übernimmt keine Haftung für:
 
-2.  Installiere die Abhängigkeiten:
-    ```bash
-    pip install -r requirements.txt
-    ```
+*   Datenverlust oder Beschädigung von E-Mail-Profilen.
+*   Versehentlich gelöschte E-Mails oder Abonnements.
+*   Sicherheitsrisiken, die durch das Öffnen von extrahierten Links entstehen könnten, auch wenn das Tool Sicherheitsprüfungen durchführt.
 
-## Nutzung
+Bitte erstelle vor der Nutzung Backups deiner Thunderbird-Profile.
 
-Starte das Programm über die Kommandozeile:
+## Lizenz
 
-```bash
-python src/main.py
-```
-
-Das Tool beginnt sofort mit der Analyse und öffnet anschließend ein Fenster mit den Ergebnissen.
-
-## Anforderungen
-
-*   Python 3.x
-*   Mozilla Thunderbird (installiert und eingerichtet)
-*   Windows (aufgrund der Pfad-Struktur für AppData)
-
-## Entwicklung
-
-Der Code befindet sich im `src`-Ordner:
-*   `main.py`: Einstiegspunkt der Anwendung.
-*   `analyzer.py`: Logik zum Scannen der Mbox-Dateien und Extrahieren der Links.
-*   `gui.py`: Benutzeroberfläche mit Tkinter.
+Dieses Projekt ist unter der MIT-Lizenz veröffentlicht. Siehe die [LICENSE](LICENSE) Datei für Details.
